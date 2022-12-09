@@ -1,0 +1,174 @@
+%\pagebreak
+\settowidth{\versewidth}{To David's city, sing all earth, With her blest Infant there.}
+\poemtitle{Shepherds Arise}
+%\begin{multicols}{2}
+\begin{lilypond}[staffsize=16]
+
+\version "2.18.2"
+chorus = {
+  \override Lyrics.LyricText.font-shape = #'italic
+}
+
+normal = {
+  \revert Lyrics.LyricText.font-shape
+}
+global = {\key bes \major \time 2/2 \compressFullBarRests }
+\new ChoirStaff
+<<
+  \new Staff
+  <<
+    \global
+    \relative c''
+      {
+      bes2 a4 a | bes2. c4 | d( bes a) g | a2.
+      a4 | d4( c8 bes c4) d | ees2 d4( c) | bes2.
+      bes4 | c2 bes4 a | bes4.( c8 d4) d | d( bes) bes( g) | f2.
+      r4 | R1 | R1 | r2 r4
+      c'4 | d d bes bes | c ees f d | ees2 d4( c) | d1 \bar "||"
+
+      bes2 a4 a | bes2.\fermata r4 | r2 r4
+      f'4 | d c bes f' | ees d c c | bes bes bes bes | a2.
+      bes4 | c ees f d | d2 bes4 bes | a a bes bes | bes2 a | bes1 \bar "."
+      }
+    \addlyrics {Shep -- herds a -- rise,
+    be not __ a -- fraid.
+    With ha -- sty steps re -- pair,
+    To Beth -- le -- hem ci -- ty, see the maid,
+    With her blest in -- fant there,
+    with her blest in -- fant there.
+\chorus
+    Sing, sing all earth,
+    Sing, sing all earth,
+    sing, sing all earth e -- ter -- nal prai -- ses sing
+    To our Re -- deem -- er, to our Re -- deem -- er and our heaven -- ly King.}
+    >>
+
+  \new Staff
+  <<
+    \global
+    \relative c'
+    {
+    f2 f4 f | f2. f4 | d2 f | f2.
+    f4 | f2. f4 | g2 f4( ees) | d2.
+    d4 | f2 f4 f | g2. f4 | f( d) d( ees) | f2.
+    r4| R1 | r2 r4
+    d4 | f f f d | d2.
+    d4 | f2. f4 | g2 f | d1 \bar "||"
+
+    f2 f4 f | f2.\fermata
+    g4 | f ees d f | f1~ | f2. ees4 | f2 f | f2.
+    r4 | R1 | f2 f4 f | f f g g | f2 f | f1 \bar "."
+     \bar "."
+    }
+    \addlyrics {
+    Shep -- herds a -- rise,
+    be not __ a -- fraid.
+    With ha -- sty steps re -- pair,
+    To Beth -- le -- hem ci -- ty, see the maid,
+    With her blest in -- fant there,
+    with her blest in -- fant there.
+\chorus
+    Sing, sing all earth,
+    sing, sing all earth e -- ter -- nal prai -- ses sing
+    To our Re -- deem -- er and our heaven -- ly King.
+    }
+  >>
+
+  \new Staff
+  <<
+    \global
+    \relative c''
+    {
+    bes2 c4 c | d2. d8( ees) | f4( d c) bes | c2.
+    d8( ees) | f4( ees8 d c4) bes | c2 bes4( a) | bes2.
+    bes4 | c( a) bes c | d4.( c8 bes4) d | f( d) d( bes) | c2.
+    r4 | r2 r4 bes4 | d d bes bes| c2.
+    c4 | d d f d | c ees d bes | c2 bes4( a) | bes1
+
+    d2 c4 c | d2.\fermata ees4 | d c bes
+    d | f( ees d c8 d | ees4 d c) a | bes2 d | c2.
+    d4 | ees c d bes | f'2 d4 d c c bes ees | d2 c2 | bes1
+
+    }
+    \addlyrics
+    {
+    Shep -- herds a -- rise,
+    be not __ a -- fraid.
+    With ha -- sty steps re -- pair,
+    To Beth -- le -- hem ci -- ty, see the maid,
+    With her blest in -- fant there,
+    with her blest in -- fant there,
+    with her blest in -- fant there.
+\chorus
+    Sing, sing all earth,
+    sing, sing all earth,
+    e -- ter -- nal prai -- ses sing,
+    To our Re -- deem -- er,
+    to our Re -- deem -- er and our heaven -- ly King.
+        }
+  >>
+
+  \new Staff
+    <<
+    \global
+    \relative c
+    {\clef "bass"
+    <bes bes'>2 f'4 f | bes2. f4 | d2 bes | f'2.
+    f4 | bes2. bes4 | ees,2 f | bes,2.
+    bes4 | f'2 bes4 a | g2. f4 | bes2 bes,2 | f'2.
+    f4 | bes bes f f g2.
+    g4 | f f f f | bes2.
+    bes4 | f( ees d) bes | ees2 f | bes,1
+
+    <bes bes'>2 f'4 f | <bes bes,>2.
+    r4 | r2 r4 a4 | a bes f bes | a bes f
+    f | bes bes bes, bes | f'2.
+    r4 | R1 | bes2 bes4 bes f f ees ees | f2 <f f,>2 | bes,1
+    }
+    \addlyrics
+    {
+    Shep -- herds a -- rise,
+    be not __ a -- fraid.
+    With ha -- sty steps re -- pair,
+    To Beth -- le -- hem ci -- ty, see the maid,
+    With her blest in -- fant there,
+    with her blest in -- fant there,
+    with her __ blest in -- fant there.
+\chorus
+    Sing, sing all earth,
+    Sing, sing all earth,
+    sing, sing all earth
+    e -- ter -- nal prai -- ses sing.
+    To our Re -- deem -- er and our heaven -- ly King.
+    }
+    >>
+  >>
+\end{lilypond}
+
+
+
+
+\begin{verse}[\versewidth]
+
+Shepherds arise, be not afraid, with hasty steps repair\\
+To David's city, sing all earth, With her blest Infant there.
+
+\begin{chorus}
+Sing, sing, all earth, sing, sing, all earth eternal praises sing\\
+To our Redeemer, to our Redeemer and our heavenly King.
+\end{chorus}
+
+Laid in a manger view the Child, humility Divine---\\
+Sweet innocence, how meek and mild, Grace in his features shine!
+
+For us the Saviour came to earth, For us his life he gave,\\
+To save us from eternal death, And raise us from the grave.
+
+To Jesus Christ our glorious king, Be endless praises given!\\
+Let all the earth his praises sing, Who made our peace with heaven.
+
+
+
+
+\end{verse}
+%\end{multicols}

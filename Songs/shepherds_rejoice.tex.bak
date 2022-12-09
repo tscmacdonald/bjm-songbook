@@ -1,0 +1,107 @@
+%\pagebreak
+\settowidth{\versewidth}{}
+\poemtitle{Shepherds Rejoice}
+%\begin{multicols}{2}
+\begin{lilypond}[staffsize=16]
+
+\version "2.18.2"
+
+global = {\key f \major \time 4/4 \numericTimeSignature }
+\new ChoirStaff
+<<
+  \new Staff
+  <<
+    \global
+    \relative c''
+      {\sacredHarpHeads \partial 2
+      \repeat volta 2{ c2 | c4 a a c | f f d c | c d c c}
+      \alternative{
+      {\partial 2 c2}
+      {c1}}
+      r2 f2 | f4 a c, c | d f f d | c c d f | f2\fermata
+      c | d4 f f c | f, f c' c | c d c c | c1 \bar ".."}
+
+
+    \addlyrics {
+    \set stanza = #"1. "
+    Shep -- herds, re -- joice! lift up your eyes,
+    And send your fears a -- way
+    \skip 2 Je -- sus, the God whom an -- gels fear,
+    Comes down to dwell with you.
+    To -- day He makes His en -- trance here,
+    But not as mon -- archs do.
+    }
+    \addlyrics {News from the re -- gions of the skies,
+    A Sav -- ior's born to -- \skip 2 day.}
+  >>
+
+  \new Staff
+  <<
+    \global
+    \relative c''
+    { \sacredHarpHeads \partial 2
+    \repeat volta 2{ a2 | f4 f f f | a a f a | f f g g}
+    \alternative{
+    {\partial 2 a2}
+    {a1}}
+    r2 a2 | a4 f a g | f f a g | a a f a | a2\fermata
+    a | g4 a a f | a a f a | f f g g | a1 \bar ".."
+    }
+    \addlyrics {
+    \set stanza = #"2. "
+    No gold nor pur -- ple swad -- dling bands,
+    Nor roy -- al shin -- ing things,
+    \skip 2
+    Go, shep -- herd, where the in -- fant lies,
+    And see His hum -- ble throne;
+    The tears of joy in all your eyes,
+    Go, shep -- herd, kiss the Son.
+    }
+    \addlyrics {A man -- ger for His cra -- dle stands,
+    And holds the King of \skip 2 Kings.}
+
+  >>
+
+  \new Staff
+  <<
+    \global
+    \relative c'
+    {
+    \sacredHarpHeads \partial 2
+    \repeat volta 2{ f2 | a4 c c a | c c a f | a a g g }
+    \alternative{
+    {\partial 2 f2}
+    {f1}}
+    r2 c'2 | c4 d f g | a d, c d | f f d c | c2\fermata
+    f | d4 c c a | c c a f | a a g g | f1 \bar ".."
+    }
+    \addlyrics {
+    \set stanza = #"3. "
+    Thus Ga -- briel sang and straight a -- bound
+    The heav'n -- ly ar -- mies throng
+    \skip 2
+    Glo -- ry to God who reigns a -- bove,
+    Let peace sur -- round the earth.
+    Mor -- tals shall know their Mak -- er's love
+    At their Re -- deem -- er's birth.
+    }
+    \addlyrics {They tune their harps to soft -- ly sound,
+    And thus con -- clude their \skip 2 song.}
+  >>
+
+  \new Staff
+    <<
+    \global
+    \relative c
+    {\clef "bass"
+    \sacredHarpHeads \partial 2
+    \repeat volta 2{ f2 | f4 f f c | f f d c |f f c c }
+    \alternative{
+    {\partial 2 f2}
+    {f1}}
+    r2 f2 | f4 a f c' | a a f d  | f f d c | f2\fermata
+    f | d4 f f f | c c f c  | f f c c | f1 \bar ".."
+    }
+    >>
+  >>
+\end{lilypond}

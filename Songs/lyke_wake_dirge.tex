@@ -1,0 +1,89 @@
+%\pagebreak
+\settowidth{\versewidth}{2. When thou from hence away art past}
+\poemtitle{Lyke Wake Dirge}
+%\begin{multicols}{2}
+
+\begin{lilypond}[staffsize=16]
+\version "2.18.2"
+
+global = {\key e \minor \time 4/4 \numericTimeSignature}
+\new ChoirStaff
+<<
+  \new Staff
+    <<
+      \global
+      \relative c'{
+      {e4 d e2 | a4 g8([ fis]) e2 | b'4. a8 b4 a | fis1 |
+g4 g fis a | g e fis2~ | \time 2/4 fis4 d | \time 4/4 e e g fis8( d) | e1 \bar "|. "
+}}
+      \\
+      \relative c'{
+      {e4 d e2 | e4 d e2 | g4. fis8 g4 fis | dis1 |
+e4 e d fis | e e dis2~ | \time 2/4 dis4 b | \time 4/4 e e e e | cis1 \bar "|."
+}}
+    >>
+
+  \new Staff
+    <<
+      \global
+      \relative c'{
+      \clef "bass"
+      {a4 g a2 | d4 c8([ b]) a2 | e'4. d8 e4 d4 | b1 |
+c4 c b d | c a b2~ | \time 2/4 b4 g | \time 4/4 a a c b8( g) | a1 \bar "|."}}
+  \addlyrics {
+    This ae nighte, this ae nighte
+    Ev -- ery nighte and alle
+    Fire and fleet and can -- dle lighte __
+        And Christe re -- ceive thy saule
+    }
+    >>
+>>
+
+\end{lilypond}
+
+\begin{verse}[\versewidth]
+
+\begin{altverse}
+1. This ae nighte, this ae nighte\\
+    \emph{Every nighte and alle}\\
+Fire and fleet and candle-lighte\\
+    \emph{And Christe receive thy saule}
+\end{altverse}
+
+\begin{altverse}
+2. When thou from hence away art past\\
+    \emph{Every nighte and alle}\\
+To Whinny-muir thou com'st at last\\
+    \emph{And Christe receive thy saule}
+\end{altverse}
+
+3. If ever thou gavest hosen and shoen\\
+Sit thee down and put them on
+
+
+4. If hosen and shoen thou ne'er gav'st nane\\
+The whinnes sall prick thee to the bare bane
+
+5. From Whinny-muir when thou may'st pass,\\
+To Brig o' Dread thou com'st at last
+
+6. From Brig o' Dread when thou may'st pass,\\
+To Purgatory fire thou com'st at last
+
+7. If ever thou gavest meat or drink\\
+The fire sall never make thee shrink
+
+8. If meat or drink thou gav'st nane\\
+The fire will burn thee to the bare bane
+
+\begin{altverse}
+9. This ae nighte, this ae nighte\\
+    \emph{Every nighte and alle}\\
+Fire and fleet and candle-lighte\\
+    \emph{And Christe receive thy saule}
+\end{altverse}
+
+
+
+\end{verse}
+%\end{multicols}

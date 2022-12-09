@@ -1,0 +1,88 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[]{verse,enumitem}
+\date{}
+
+
+
+
+\begin{document}
+\title{AMR Morris Songbook}
+\maketitle
+\tableofcontents
+\newcommand{\attrib}[1]{%
+\nopagebreak{\raggedleft\footnotesize #1\par}}
+\renewcommand{\poemtoc}{section}
+
+\makeatletter		%%This hack changes \input to point to /Songs.
+\def\input@path{{./Songs/}}	
+%or: \def\input@path{{/path/to/folder}{/path/to/other/folder}}
+\makeatother
+
+\newenvironment{chorus}[1][]{%
+	\itshape  
+  	\begin{itemize}[label={},leftmargin=-\vgap]
+    \item}
+    {\end{itemize}}
+
+
+
+
+\input{all_around_my_hat.tex}
+\input{barley_mow.tex}
+\input{barretts_privateers.tex}
+%Benbow
+\input{black_diamonds.tex}
+%The Blacksmith
+%Bold Benhamin
+\input{boys_of_bedlam.tex}
+%Bring out the Banners
+%Byker Hill
+\input{cadgwith_anthemn.tex}
+%Country Life
+\input{cuckoos_nest.tex}
+%Davy Lowston
+%Dido Bendigo
+\input{fathom_the_bowl.tex}
+\input{flowing_bowl.tex}
+%The Furze Field
+%General Taylor
+%Greenland Whale
+%Hal and Tow
+\input{handsome_morris_lads.tex}
+\input{here_we_come_a_wassailing.tex}
+%I can hew
+\input{i_went_to_market.tex}
+\input{ilkley_moor.tex}
+%John Ball
+%John Barleycorn
+\input{little_pot_stove.tex}
+\input{drop_of_nelsons_blood.tex}
+\input{nutting_girl.tex}
+%Oh Molasses
+\input{old_dun_cow.tex}
+%Old King Coal
+\input{pace_egging.tex}
+\input{pleasant_and_delightful.tex}
+%Polythene Flowers
+%Prickle Holly Bush
+\input{ramblin_rover.tex}
+\input{rattlin_bog.tex}
+%Rise up Jock
+%Rum by Gum
+\input{rolling_home.tex}
+\input{royal_oak.tex}
+%Twanky dillo
+%Tolpuddle Man
+%Unity
+%who's the Fool now
+\input{widow_and_devil.tex}
+%World turned upside town
+
+%\pagebreak
+%\settowidth{\versewidth}{LINE FROM VERSE}
+%\poemtitle{TITLE}
+%\begin{verse}[\versewidth]
+%\attrib{}
+%\end{verse}
+\end{document}
+

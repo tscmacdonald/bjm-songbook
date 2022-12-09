@@ -1,0 +1,70 @@
+\settowidth{\versewidth}{They both were grown, you know,}
+\poemtitle{The Holly and the Ivy}
+
+\begin{lilypond}[staffsize=16]
+\relative c' {
+\time 4/4
+\key g \major
+\partial 4
+g'8( a) | b4. a8 b( a) g4 | e4.( fis8) g4
+b4 | a4. fis8 d([ fis]) a([ b]) | g2.
+g8 a | b4. a8 b([ a]) g4 | e4. fis8 g4
+b a4. fis8 d([ fis]) a([ b]) g2.
+g4 | g b d d | e2 d4
+b8([ a]) g([ a]) b([ c]) d4 e | d2.
+g,8([ a]) | b4. a8 b([ a]) g4 | e4. fis8 g4.
+b8 | a4.( fis8) d([ fis]) a([ b]) | g2. \bar "|."
+}
+\addlyrics {
+The hol -- ly and the i -- vy,
+They both were grown, you know,
+And of all the trees that's in the wood
+The hol -- ly bears  a  crown.
+The hol -- ly bears a blos -- som
+As  white as a -- ny flower
+And  Ma -- ry bore sweet Je -- sus Christ
+To be __ our  Sa -- viour
+}
+
+\end{lilypond}
+
+\begin{multicols}{2}
+\begin{verse}[\versewidth]
+1. The holly and the ivy,\\
+They both were grown, you know,\\
+And of all the trees that are in the wood, \\
+The holly bears a crown.\\
+The holly bears a blossom\\
+As white as any flower,\\
+And Mary bore sweet Jesus Christ\\
+To be our Saviour.
+
+2. The holly and the ivy,\\
+They both were grown, you know,\\
+And of all the trees that are in the wood, \\
+The holly bears a crown.\\
+The holly bears a berry\\
+As red as any blood,\\
+And Mary bore sweet Jesus Christ\\
+To do poor sinners good.
+
+3. The holly and the ivy,\\
+They both were grown, you know,\\
+And of all the trees that are in the wood, \\
+The holly bears a crown.\\
+The holly bears a prickle\\
+As sharp as any thorn\\
+And Mary bore sweet Jesus Christ\\
+On Christmas Day in the morn.
+
+4. God bless the ruler of this house\\
+And send him long to reign,\\
+That many a merry Christmas\\
+He may live to see again.\\
+God bless his friends and kindreds\\
+That live both far and near,\\
+God bless them and send them all\\
+A happy New Year.
+
+\end{verse}
+\end{multicols}

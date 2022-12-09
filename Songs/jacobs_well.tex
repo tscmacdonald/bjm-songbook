@@ -1,0 +1,150 @@
+\settowidth{\versewidth}{This had she known, her fainting mind,}
+\poemtitle{Jacob's Well}
+%\begin{multicols}{2}
+\begin{lilypond}[staffsize=16]
+
+
+\version "2.18.2"
+chorus = {
+  \override Lyrics.LyricText.font-shape = #'italic
+}
+
+normal = {
+  \revert Lyrics.LyricText.font-shape
+}
+global = {\key f \major \time 4/4 \compressFullBarRests }
+\new ChoirStaff
+<<
+  \new Staff
+  <<
+    \global
+    \relative c'
+      {
+      f2 a4 f | c'2. bes4 | a2 g2 | f2.
+      a4 | g( f) e( f) | g( f) g( a) | bes( a)
+      bes( c) | d2 c | g b |c2.
+      f,4 | c'2. bes4 | a g a bes | c1~ | c~ | c2.
+      d4 | c bes a g | a2.
+      c4 | d2. c4 | bes a g f c'2.
+      d4 | c4.( bes8 a4) bes | a2 g f2. \bar "||"
+            }
+    \addlyrics {
+    At Ja -- cob's well a stran -- ger sought
+    His droop -- ing frame to cheer,
+    His droop -- ing frame to cheer;
+    Sa -- ma -- ria's daugh -- ter lit -- tle thought __
+    That Ja -- cob's God was near,
+    Sa -- ma -- ria's daugh -- ter lit -- tle thought __
+    That Ja -- cob's God was near.
+    }
+  >>
+
+  \new Staff
+  <<
+    \global
+    \relative c'
+    {
+    c2 c4 c | f2.  g4 | f2 c4( bes) | a2.
+    f'4 | e( f) c2 | e4( f) e( f) | e4( f)
+    e( f) | f2 f | e f | e2.
+    \bar "||" f4 | a2. g4 | f e f e | f1~ | f( | e2.)
+    f4 | f e f g | f2.
+    f4 | f2. f4 | e f e d | e2.
+    f4 | f4.( e8 f4) g | f2 c4( bes) | a2.
+    }
+    \addlyrics {
+    At Ja -- cob's well __ a stran -- ger sought
+    His droop -- ing frame to cheer,
+    His droop -- ing frame to cheer;
+    Sa -- ma -- ria's daugh -- ter lit -- tle thought __
+    That Ja -- cob's God was near,
+    Sa -- ma -- ria's daugh -- ter lit -- tle thought __
+    That Ja -- cob's God was near.
+    }
+  >>
+
+  \new Staff
+  <<
+    \global
+    \relative c'
+    {\clef "treble_8"
+    a2 c4 a | a4.( bes8 c4) c | c2 bes | a2.
+    c4 | bes( a) g( a) | bes( c) bes( a) | g( a)
+    c2 | bes c | c g | g2.
+    a4 | a2. g4 | f e f c' | c2. r4 |
+    R1 | R1 | R1
+    r2 r4
+    c4 | bes2. c4 | c c c b c2.
+    bes4 | c2. bes4 c2 bes | a2.
+    }
+    \addlyrics
+    {
+    At Ja -- cob's well a stran -- ger sought
+    His droop -- ing frame to cheer,
+    His droop -- ing frame to cheer;
+    Sa -- ma -- ria's daugh -- ter lit -- tle thought
+    Sa -- ma -- ria's daugh -- ter lit -- tle thought __
+    That Ja -- cob's God was near.
+    }
+  >>
+
+  \new Staff
+    <<
+    \global
+    \relative c
+    {\clef "bass"
+    f2 f4 f | f4.( g8 a4) bes | c2 c,2 | f2.
+    f4 | c2 c | bes'4( a) g( f) | e( f) g( a) | bes2
+    a2 | g2 g,2 | a2. r4 | R1 | r2 r4
+    a4 | a'2. g4 | f4 c f8( g) a( bes) | c2.
+    bes4 | a g f e | d2.
+    f4 | bes2. a4 | g f e d | c2.
+    bes'4 | a4.( g8 f4) bes, | c2 c | f2.
+    }
+    \addlyrics
+    {
+    At Ja -- cob's well a stran -- ger sought
+    His droop -- ing frame to cheer,
+    His droop -- ing frame to cheer
+    Sa -- ma -- ria's daugh -- ter lit -- tle thought
+    That Jac -- cob's God was near,
+    Sa -- ma -- ria's daugh -- ter lit -- tle thought __
+    That Ja -- cob's God was near.
+    }
+    >>
+  >>
+  \end{lilypond}
+  \pagebreak
+  \begin{verse}[\versewidth]
+  At Jacob's well a stranger sought\\
+  His drooping frame to cheer,\\
+  His drooping frame to cheer;\\
+  Samaria's daughter little thought\\
+  That Jacob's God was near,\\
+  Samaria's daughter little thought\\
+  That Jacob's God was near.
+  
+  This had she known, her fainting mind,\\
+  For richer draughts had sighed,\\
+  For richer draughts had sighed;\\
+  Nor had Messiah, ever kind,\\
+  Those richer draughts denied,\\
+  Nor had Messiah, ever kind,\\
+  Those richer draughts denied.
+  
+  This ancient well, no glass so true,\\
+  Britannia's image shows,\\
+  Britannia's image shows;\\
+  Now Jesus travels Britain through,\\
+  But who the stranger knows?\\
+  Now Jesus travels Britain through,\\
+  But who the stranger knows?  
+  
+  Yet Britain must the stranger know,\\
+  Or soon her loss deplore,\\
+  Or soon her loss deplore;\\
+  Behold, the living waters flow,\\
+  Come drink and thirst no more!\\
+  Behold, the living waters flow,\\
+  Come drink and thirst no more!
+  \end{verse}

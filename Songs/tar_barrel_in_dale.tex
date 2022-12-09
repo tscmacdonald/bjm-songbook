@@ -1,0 +1,102 @@
+\settowidth{\versewidth}{The blazing barrels are hurled}
+\poemtitle{Tar Barrel in Dale}
+\begin{lilypond}[staffsize=16]
+\version "2.18.2"
+
+global = {\key g \major \time 4/4 \numericTimeSignature}
+\new ChoirStaff
+<<
+  \new Staff
+    <<
+      \global
+      \transpose a g' {
+      \relative c' {
+      \partial 8
+      e8\fermata | cis d e4 | e2\fermata fis8( gis) a4 | a2\fermata
+      a4 gis8 a | fis4\fermata  a,8 cis d4 cis cis | cis4\fermata \bar ".|"
+      }}
+      \addlyrics
+     {Tar bar -- rel in Dale,
+     Fire __ and snow
+     Toast the new year
+     Bid fare -- well to the old
+     }
+    >>
+  \new Staff
+    <<
+      \global
+      \transpose a g' {
+      \relative c' {
+      \new Voice
+      {
+      \partial 8
+      cis8\fermata | a b cis4  cis2\fermata | d8( e) fis4 | fis( e\fermata)
+      fis4 e8 fis | e16( d cis8\fermata) a e' d4 cis b| a4\fermata \bar ".|"}
+      }}
+    >>
+
+  \new Staff
+    <<
+      \global
+      \transpose a g' {
+      \relative c' {
+      \partial 8
+      cis8\fermata | a b a4 a2 | fis8( gis) a4 cis2\fermata |
+      b4 cis8( d) a4\fermata fis8 e fis4 e e e\fermata \bar ".|"
+      }}
+    >>
+>>
+\end{lilypond}
+
+\begin{multicols*}{2}
+\begin{verse}[\versewidth]
+\textit{ 	Tar barrel in Dale\\
+  	Fire and snow\\
+  	Toast the New Year\\
+  	Bid farewell to the old
+}
+
+The old year out,\\
+The New Year in,\\
+Please won't you let\\
+The lucky bird in.\\
+With bottle in hand\\
+And a piece of black coal,\\
+A stranger's a friend\\
+When first-footing you go.
+
+
+At midnight's approach \\
+The band you can hear,\\
+The fiery procession\\
+Of guisers draws near.\\
+With friends and good company,\\
+With voices so clear,\\
+Singing in harmony,\\
+Bringing in the New Year.
+\columnbreak
+
+Off the heads of the guisers\\
+The blazing barrels are hurled\\
+On to the bonfire;\\
+Smoke, sparks and flames swell.\\
+Amidst cheers and rejoicing,\\
+The rites of Old Father Time,\\
+We'll link arms together\\
+Sing Auld Lang Syne
+
+
+
+Throughout the year\\
+When we sing this song\\
+Old friends and new friends\\
+Sing along.\\
+May good fortune be with you,\\
+From all sorrows refrain\\
+Till that happy time\\
+When we all meet again.
+
+
+\attrib{George Unthank}
+\end{multicols}
+\end{verse}

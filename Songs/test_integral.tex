@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper,inner=3.5cm,outer=3.5cm,bottom=4cm,top=3cm]{geometry}
+\usepackage[]{verse,enumitem}
+\usepackage{graphicx}
+\usepackage{multicol}
+\newcommand*{\dotsize}{10}
+\date{}
+
+
+
+
+\begin{document}
+\title{Bells of Caroldise}
+\maketitle
+\tableofcontents
+\newcommand{\attrib}[1]{%
+\nopagebreak{\raggedleft\footnotesize #1\par}}
+\renewcommand{\poemtoc}{section}
+
+\makeatletter		%%This hack changes \input to point to /Songs.
+%\def\input@path{{./Songs/}}	
+%or: \def\input@path{{/path/to/folder}{/path/to/other/folder}}
+\makeatother
+
+\newenvironment{chorus}[1][]{%
+	\itshape  
+  	\begin{itemize}[label={},leftmargin=-\vgap]
+    \item}
+    {\end{itemize}}
+\pagebreak
+
+%\pagebreak
+\settowidth{\versewidth}{When a bold set of ruffians they entered our cave,}
+\poemtitle{All Things Are Quite Silent}
+%\begin{multicols}{2}
+
+\begin[staffsize=\dotsize]{lilypond}
+\
+\relative c' {
+\time 3/4
+\partial 4
+a'8( g) | f4 e d | g a b | g a8( g) e4 |d2
+d8( e) | f4 e d | g( a) b | g a8( g) e4| d2
+a'8 c | b([ a]) g( a) b4 | c8( b) a4 a | d c d | a2
+a8 g | f4 e d | g a b | g a8( g) e4 | d2 ||
+}
+\addlyrics {
+    All | things are quite | si -- lent each | mor -- tal__ at | rest, When | me and my | love __ got snug in __ one nest, When a | bold set of | ruf -- fians they | en -- tered our | cave, And they | forced my dear | jew -- el to | plough the salt | wave.
+  }
+\end{lilypond}
+
+\begin{verse}[\versewidth]
+All things are quite silent, each mortal at rest,\\
+When me and my love got snug in one nest,\\
+When a bold set of ruffians they entered our cave,\\
+And they forced my dear jewel to plough the salt wave.
+
+I begged hard for my sailor as though I begged for life.\\
+They'd not listen to me although a fond wife,\\
+Saying: `The king he wants sailors, to the sea he must go'\\
+And they've left me lamenting in sorrow and woe
+
+Through green fields and meadows we ofttimes did walk,\\
+And sweet conversation of love we have talked,\\
+With the birds in the woodland so sweetly did sing,\\
+And the lovely thrushes' voices made the valleys to ring
+
+Although my love's gone I will not be cast down,\\
+Who knows but my sailor may once more return?\\
+And will make me amends for all trouble and strife,\\
+And my true love and I might live happy for life.
+\end{verse}
+%\end{multicols}
+
+%\pagebreak
+\settowidth{\versewidth}{Down in the meadows forth to plough;}
+\poemtitle{On Christmas Day}
+
+\begin[staffsize=\dotsize]{lilypond}
+\
+\relative c' {
+\time 5/4
+\key g \minor
+\partial 4
+d4 | g( a) bes c a | g8([ a]) g([ f]) d2
+d'4 | d c a( g) f | g a8( c) bes2 c4 |
+\time 6/4
+d4.( ees8) d([ c]) bes4( c) d8( ees) | d4 bes a2. c8.( bes16) |
+\time 5/4 g8( f) d4 f( g) a8 c | c4 bes g
+ }
+\addlyrics {On Christ -- mas Day it hap -- pened so,
+Down in the mead -- ows forth to __ plough;
+As we __ were plough -- ing on so fast,
+Up comes sweet Je -- sus his -- self at last. 
+      }
+\end{lilypond}
+
+\begin{verse}[\versewidth]
+On Christmas day it happened so,\\
+Down in the meadows forth to plough;\\
+As we were ploughing on so fast,\\
+Up comes sweet Jesus his self at last.
+
+`O man, O man, what makes you plough\\
+So hard upon the Lord's birthday?'\\
+The farmer answered him with great speed:\\
+`For to plough this day we have great need'.
+
+His arms did quaver to and fro;\\
+His arms did quaver, he could not plough.\\
+The ground did open and lose him in,\\
+Before he could repent of sin.
+
+His wife and children are out of place,\\
+His beasts and cattle they die away;\\
+His beasts and cattle they die away,\\
+For the breaking of our Lord's birthday.
+\end{verse}
+
+
+
+\end{document}

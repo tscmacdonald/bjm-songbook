@@ -1,0 +1,49 @@
+%\pagebreak
+\settowidth{\versewidth}{Down in yon forest there stands a fall,}
+\poemtitle{Down in Yon Forest}
+%\begin{multicols}{2}
+\begin{lilypond}[staffsize=16]
+
+\relative c' {
+\time 6/8
+\key a \minor
+\autoBeamOff
+a'8 b a g a b | c([ b]) a b4
+e,8| a([  b]) a  g8. a16 b8 | c b a b4
+b8  c b c d c d | e c a gis8.\fermata
+fis16 e8 | a b a g a b | c b c a4. \bar "|."
+}
+\addlyrics {Down in yon fo -- rest there stands a hall,
+The bells __ of Pa -- ra -- dise, I heard them ring.
+It's co -- vered all o -- ver with pur -- ple and pall,
+And I love my Lord Je -- sus a -- bove a -- ny -- thing.}
+\end{lilypond}
+
+\begin{verse}[\versewidth]
+\indentpattern{0101}
+\begin{altverse}
+1. Down in yon forest there stands a hall,\\
+\emph{The bells of Paradise, I heard them ring}\\
+It's covered all over with purple and pall\\
+\emph{And I love my Lord Jesus above anything}
+\end{altverse}
+
+2. In that hall there stands a bed,\\
+It's covered all over with scarlet so red.
+
+3. In that bed there lies a knight,\\
+Whose wounds do bleed by day and by night.
+
+4. At the bedside there lies a stone,\\
+Which the sweet Virgin Mary hath knelt upon.
+
+5. Under that bed there runs a flood,\\
+The one half runs water, the other runs blood.
+
+6. At the foot of the bed there grows a thorn,\\
+Which ever bore blossom since he was born.
+
+7. Over that bed the moon shines bright,\\
+Denoting our saviour was born on this night.
+\end{verse}
+%\end{multicols}

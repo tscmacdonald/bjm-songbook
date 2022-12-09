@@ -1,0 +1,93 @@
+\poemtitle{Idumea}
+\begin{lilypond}[staffsize=16]
+
+\version "2.18.2"
+
+global = {\key c \major \time 3/2 \numericTimeSignature }
+\new ChoirStaff
+<<
+  \new Staff
+  <<
+    \global
+    \relative c''
+      {\sacredHarpHeads
+      r1 c2 | e1 d2 | c1 d2 | e1
+      e2 | d1 e4( d) | e1 d4( c) | a1
+      a2 c1 | c4( b) | a1 c4( d) | e1 b4( a) | g1
+      g'2 | e1 e4( d) | c1 <d g,>2 | <e a,>1. \bar ".."
+      }
+    \addlyrics {
+    \set stanza = #"1. "
+    And am I born to die?
+    To lay this bod -- y down,
+    And must my trem -- bling spir -- it fly
+    In -- to a world un -- known?}
+    >>
+
+  \new Staff
+  <<
+    \global
+    \relative c''
+    {\sacredHarpHeads
+    r1 a2 | c1 b4( a) | g1 g2 | a1
+    c2 | b1 a4( b) | c1 b4( g) | c1
+    c2 | g1 a4( b) | c1 g2 |
+    <<
+    { \voiceOne e1 b'4( c) | d2}
+    \new Voice = "altosplit" { \voiceTwo \sacredHarpHeads c1 e,2 | g1}
+    >>
+    \oneVoice
+    c2 | c1 g4( f) | e1 g2 | e1. \bar ".."
+
+
+    }
+    \addlyrics {
+    \set stanza = #"2. "
+    A land of deep -- est shade,
+    Un -- pierced by hu -- man thought
+    The drear -- y re -- gions of the dead,
+    Where all things are for -- got!
+    }
+  >>
+
+  \new Staff
+  <<
+    \global
+    \relative c'
+    {\sacredHarpHeads
+    r1 a'2 | a1 g4( a) c1 d4( c) | a1
+    e'2 | g1 e4( d) | c1 d2 | e1
+    e2 | g1 e4( d) | e1 d4( c) | a1 g4( e) | g1
+    g2 | a1 g4( a) | c1 d4( c) | a1. \bar ".."
+    }
+    \addlyrics
+    {
+    \set stanza = #"3. "
+    Soon as from earth I go,
+    What will be -- come of me?
+    E -- ter -- nal hap -- pi -- ness or woe
+    Must then my por -- tion be!
+    }
+  >>
+
+  \new Staff
+    <<
+    \global
+    \relative c
+    {\clef "bass" \sacredHarpHeads
+    r1 a'2 | a1 d,2 | e1 e2 | a,1
+    a'2 | g1 c4( b) | a1 g2 | e1
+    a2 | g1 a4( b) | a1 c,2 | a1 c2 | g'1
+    c,2 | a1 c4( d) | e1 e2 | a,1.
+    }
+    \addlyrics
+    {
+    \set stanza = #"4. "
+    Waked by the trum -- pet sound,
+    I from my grave shall rise;
+    And see the Judge with glo -- ry crowned,
+    And see the flam -- ing skies!
+    }
+    >>
+  >>
+\end{lilypond}
